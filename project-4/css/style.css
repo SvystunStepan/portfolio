@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Tahoma, Arial, sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
+	/*font-family: 'Oswald', sans-serif;
+	font-family: 'Comfortaa', cursive;*/
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a{ 
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+header{
+	background-color: #000000;
+	max-height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	.container{
+	min-width: 800px;
+	max-height: 36px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	}
+	.item{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	}
+	.item .item-main{
+		text-align: center;
+		width: 70px;
+		}
+		.item-main:first-child{
+			min-width: 120px;
+			}
+		.item-main:nth-child(4){
+			width: 80px;
+			}
+		.item .title{
+			display: block;
+			padding: 11px 10px;
+			font-size: 14px;
+			line-height: 14px;
+			font-weight: 400;
+			color: #60b5ed;
+			box-sizing: border-box;
+			transition: all 500ms ease;
+			}
+			.item .title:hover{
+				font-weight: 700;
+				color: #ffffff;
+				background-color: #4eabda;
+				}
+		.item::after{
+			content: '';
+			border-right: 1px solid #56a2dc;
+			height: 31px;
+			margin: auto;
+			}
+	.ofertas{
+		max-height: 36px;
+		min-width: 137px;
+		margin: 6px 17px 7px 19px;
+		}
+		.ofertas .ofertas-flag{
+			float: left;
+			padding: 0;
+			}
+		.ofertas .ofertas-of{
+			float: right;
+			margin: 4px 0px 7px 10px;
+			}
+			.ofertas-of .title{
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: 400;
+				color: #fefefe;
+				}
+	.login{
+		min-width: min-content;
+		max-height: 36px;
+		margin-right: 20px;
+		background: rgb(46,123,197);
+		background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
+		padding: 11px 12px;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 400;
+		color: #ffffff;
+		}
+		.login .title{
+			color: #ffffff;
+			text-decoration: underline;
+		}
+main{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	}
+	.content{
+		background-color: rgba(0,0,0,0.6);
+		width: 560px;
+		height: 613px;
+		margin: 5% auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		.content .title{
+			width: 560px;
+			text-align: center;
+			font-size: 24px;
+			line-height: 16px;
+			font-weight: 400;
+			color: #ffffff;
+			padding: 21px 0px;
+			border-bottom: 2px solid grey;
+			}
+		.facebook{
+			max-width: 276px;
+			max-height: 36px;
+			margin-top: 36px;
+			background: rgb(100,125,213);
+			background: linear-gradient(180deg, rgba(100,125,213,1) 0%, rgba(51,80,145,1) 9%, rgba(51,80,145,1) 94%, rgba(40,61,106,1) 97%);
+			}
+			.facebook .button{
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 276px;
+				color: #ffffff;
+				font-family: 'Oswald', sans-serif;
+				font-size: 14px;
+				font-weight: 600;
+				letter-spacing: 0.3px;
+				}
+			.logo{
+				max-height: 30px;
+				padding-right: 9px;
+				border-right: 2px ridge rgb(100,125,213);
+				}
+			.facebook:hover{
+				transform: scale(0.97);
+				}
+		.broken-line{
+			width: 276px;
+			height: 74px;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			}
+			.broken-line:before{
+				content: '';
+				width: 44%;
+				height: 2px;
+				background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
+				}
+			.broken-line:after{
+				content: '';
+				width: 44%;
+				height: 2px;
+				background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
+				}
+			h3{
+				display: block;
+				margin: -7px auto;
+    			padding: 0px 5px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #999999;
+				}
+		.personal-data{
+			max-width: 276px;
+			height: 338px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			}
+			form input{
+				position: relative;
+				width: 276px;
+				height: 35px;
+				padding-left: 19px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				background-image: linear-gradient(0.0deg, #111111 0%, #0e0d0d 100%);
+				border: 0;
+				border-bottom: 1px solid gray;
+				}
+				form input:hover{
+					color: #fffbfb;
+					background-image: linear-gradient(0.0deg, #1b5288 0%, #1b5288 100%);
+					}
+			.checkbox-reg{
+				display: inline-flex;
+				align-self: flex-start;
+				align-items: center;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				opacity: 0.7;
+				}
+				label input{
+					margin-right: 10px;
+					width: 15px;
+					}
+			.registration-btn{
+				align-self: center;
+				width: 155px;
+				padding: 12px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 700;
+				color: #ffffff;
+				background: rgb(46,123,197);
+				background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
+				border-radius: 5px;
+				border-width: 0px;
+				cursor: pointer;
+				}
+			.content-footer{
+				margin: 19px 128px 19px 123px;
+				text-align: center;
+				font-size: 11px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				opacity: 0.7;
+				}		

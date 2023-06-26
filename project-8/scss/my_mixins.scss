@@ -1,0 +1,59 @@
+@font-face {
+   font-family: "Gilroy-Regular";
+   src:url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+   font-family: "Gilroy-Medium";
+   src:url(../fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+   font-family: "Gilroy-Semibold";
+   src:url(../fonts/Gilroy-Semibold.ttf);
+}
+@font-face {
+   font-family: "Gilroy-Extrabold";
+   src:url(../fonts/Gilroy-Extrabold.ttf);
+}
+
+@mixin font400 {
+   font-family: "Gilroy-Regular";
+   font-weight: 400;
+   font-style: normal;
+}
+@mixin font500 {
+   font-family: "Gilroy-Medium";
+   font-weight: 500;
+   font-style: normal;  
+}
+@mixin font600 {
+   font-family: "Gilroy-Semibold";
+   font-weight: 600;
+   font-style: normal;
+}
+@mixin font800 {
+   font-family: "Gilroy-Extrabold";
+   font-weight: 800;
+   font-style: normal;
+}
+
+@mixin flex ($flex-direction, $align-items, $justify-content, $align-content){
+   display: flex;
+   flex-direction: $flex-direction;
+   align-items: $align-items;
+   justify-content: $justify-content;
+   align-content: $align-content;
+}
+
+@mixin title-items{
+   @include font800;
+   font-size: 46px;
+   line-height: 50px;
+   color: #000000;
+   text-align: center;
+   padding: 25px 0;
+
+   i{
+      color: #75BF7A;
+   }
+}
+

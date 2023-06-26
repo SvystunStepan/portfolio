@@ -1,0 +1,705 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta name="Title" content="Title" />
+  <meta name="description" content="Title | description" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Title | description" />
+  <meta property="og:url" content="" />
+  <meta property="og:sitename" content="Title" />
+  <meta property="og:title" content="Title">
+  <meta property="og:image" content="images/og.png" />
+  <title>PanCredit</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/app.css" />
+  <!-- generator favicon https://realfavicongenerator.net/ -->
+  <!--   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff"> -->
+
+</head>
+<body>
+  <nav>
+    <section>
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">
+          <div class="blok">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <ul class="topmenu">
+            <li><a class="arrow">Услуги</a>
+              <ul class="submenu">
+                <li><a href="#">Микрокредиты</a></li>
+                <li><a href="#">Кредит без справки о доходах и поручителей </a></li>
+                <li><a href="#">Кредиты без звонков </a></li>
+                <li><a href="#">Кредит наличкой </a></li>
+                <li><a href="#">Быстрй займ </a></li>
+                <li><a href="#">Cрочный займ </a></li>
+                <li><a href="#">Кредит с плохой кредитной историей </a></li>
+                <li><a href="#">Кредит для студентов </a></li>
+                <li><a href="#">Кредит для пенсионеров </a></li>
+                <li><a href="#">Кредит онлайн </a></li>
+                <li><a href="#">Деньги до зарплаты </a></li>
+                <li><a href="#">Займ онлайн на карту</a></li>
+                <li><a href="#">Потребительский кредит</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Программа лояльности</a></li>
+            <li><a href="#">Условия кредита</a></li>
+            <li><a class="arrow">О нас</a></li>
+            <li><a href="#">Как это работает</a></li>
+            <li><a href="#">Как погасить</a></li>
+            <li><a href="#">Информация о приложении</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Информация о приложении</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile">
+        <button onclick="togglePhone()">
+          <img src="images/vector.webp" alt="">
+        </button>
+        <p id="phone-number" class="num" style="display: none;">+38 (044) 334 44 20</p>
+      </div>
+      <div class="container">
+        <a class="logotype" href="">
+          <img class="logo" src="images/logo.webp" alt="">
+          PanCredit
+        </a>
+        <a class="online-credit" href="">
+          Онлайн кредит на карту 24/7
+        </a>
+        <div class="g-pay-mob none">
+          <a href="#"><img src="images/Group 5.webp" alt=""></a>
+        </div>
+        <a class="tell" href="">
+          <img src="images/phone.webp" alt="">
+          +38 (044) 334 44 20
+        </a>
+        <a class="lang" href="">
+          <img src="images/flag.webp" alt="">
+          Укр
+        </a>
+        <a class="office animate__animated animate__bounce" href="test.html">
+          <i>Мой кабинет</i>
+          <img class="start-img" src="images/path20.webp" alt="">
+          <img class="hover" src="images/path21.webp" alt="">
+        </a>
+      </div>
+    </section>
+  </nav>
+
+  <header>
+    <section>
+      <div class="container">
+        <div class="header-flex">
+          <div class="box" data-aos="fade-down">
+            <img class="header-img" src="images/Rectangle.webp" alt="">
+            <div class="title-box">
+              <h1 class="title">Онлайн кредит <br> на карту за 10 минут</h1>
+            </div>
+          </div>
+
+          <div class="block" data-aos="fade-up">
+            <label for="amountSlider">Укажите сумму
+              <i class="sum">
+                <span id="amountValue">500</span> &nbsp;грн
+              </i>
+            </label>
+            <div class="min-max">
+              <p>Мин. 500 грн</p>
+              <p>Макс. 10 000 грн</p>
+            </div>
+            <input type="range" id="amountSlider" min="500" max="10000" value="500">
+            <label for="daysSlider">Укажите срок
+              <i class="day">
+                <span id="daysValue">7</span> &nbsp;дней
+              </i>
+            </label>
+            <div class="min-max">
+              <p>Мин. 7 дней</p>
+              <p>Макс. 30 дней</p>
+            </div>
+            <input type="range" id="daysSlider" min="7" max="30" value="0">
+            <div class="credit-info">
+              <div class="column left">
+                <ul class="text">
+                  <li>Сумма займа</li>
+                  <li>Срок кредита</li>
+                  <li>День погашения</li>
+                  <li>Комиссия</li>
+                </ul>
+                <div class="span">
+                  <span id="loanAmount">2 500 грн</span>
+                  <span id="loanDays">12 дней</span>
+                  <span id="repaymentDate">25/10/2020</span>
+                  <span id="commission">250 грн</span>
+                </div>
+              </div>
+              <div class="column right">
+                <ul class="text">
+                  <li>Интерес</li>
+                  <li>APRC</li>
+                  <li>Вместе</li>
+                </ul>
+                <div class="span">
+                  <span id="interest">23,8 грн</span>
+                  <span id="aprc">511,29%</span>
+                  <span id="totalAmount">2 750 грн</span>
+                </div>
+              </div>
+            </div>
+            <div class="btngroup">
+              <button id="confirmButton">Получить деньги</button>
+              <button id="promoCodeButton">У меня есть промокод</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="action">
+      <a href="#">акции</a>
+    </div>
+
+    <section class="banner-promotions">
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-container">
+            <div class="slides1 fade">
+              <div class="promotions">
+                <div class="banner first">Баннер акции  1</div>
+                <div class="banner last">Баннер акции  2</div>
+              </div>
+            </div>
+            <div class="slides1 fade">
+              <div class="promotions">
+                <div class="banner first">Баннер акции  3</div>
+                <div class="banner last">Баннер акции  4</div>
+              </div>
+            </div>
+            <div class="slide-numbering">
+              <span class="prev" onclick="plusSlides1(-1)">&#10094;</span>
+              <span class="dot1" onclick="currentSlide1(1)">01</span>
+              <span class="dot1" onclick="currentSlide1(2)">02</span>
+              <span class="next" onclick="plusSlides1(1)">&#10095;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="get-loan">
+      <div class="container">
+        <h2 class="title-item">Как взять кредит</h2>
+        <h2 class="title-item">Кредит в PanCredit <br> это просто</h2>
+        <div class="white-bg" data-aos="fade-right">
+          
+          <button id="getBtnMob">Как взять кредит
+            <span id="getArrowDown"></span>
+          </button>
+          <div class="slideshow-container" id="getBlockInfo">
+            <div class="slides2">
+              <div class="box-img">
+                <img src="images/take a loan/phone.webp" alt="">
+              </div>
+              <p class="text">Убеждаемся, что мобильный телефон, паспорт и платежная банковская карточка находятся под рукой (они понадобятся в процессе составления заявки и верификации).</p>
+            </div>
+            <div class="slides2">
+              <div class="box-img">
+                <img src="images/take a loan/phone (2).webp" alt="">
+              </div>
+              <p class="text">На онлайн калькуляторе выбираем и оцениваем финансовые условия предоставления кредита (тело, срок предоставления, процентная ставка, сумма начисляемых процентов).</p>
+            </div>
+            <div class="slides2">
+              <div class="box-img">
+                <img src="images/take a loan/phone (1).webp" alt="">
+              </div>
+              <p class="text">Заполняем форму заявки на получение кредита. Если есть твердое намерение его получить, то отвечать на поставленные вопросы необходимо исчерпывающе и правдиво</p>
+            </div>
+            <div class="slide-numbering">
+              <span class="prev2" onclick="plusSlides2(-1)">&#10094;</span>
+              <span class="active-dot2">01</span>
+              <span class="total-dot2">03</span>
+              <span class="next2" onclick="plusSlides2(1)">&#10095;</aspan>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>    
+
+    <section class="repay-loan">
+      <div class="container">
+        <h2 class="title-item">Как погасить кредит</h2>
+        <div class="white-bg" data-aos="fade-left">
+          
+          <button id="repayBtnMob">Как погасить кредит
+            <span id="repayArrowDown"></span>
+          </button>
+
+          <div class="slideshow-container" id="repayBlockInfo">
+            <div class="slides3">
+              <div class="box-img">
+                <img class="" src="images/repay the loan/Group.webp" alt="">
+              </div>
+              <div class="block">
+                <h6 class="box-title">Через платежные терминалы</h6>
+                <p class="text">Оплата кредита в терминале Ibox, EasyPay и City24 - это быстро и удобно. Терминал Вы сможете найти в ближайшем к Вам супермаркете.</p>
+                <a class="repay-link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slides3">
+              <div class="box-img lock">
+                <img src="images/repay the loan/tel/tel.webp" alt="">
+              </div>
+              <div class="block">
+                <h6 class="box-title">Через «Личный кабинет» на сайте</h6>
+                <p class="text">Оплата кредита в терминале Ibox, EasyPay и City24 - это быстро и удобно. Терминал Вы сможете найти в ближайшем к Вам супермаркете.</p>
+                <a class="repay-link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slides3">
+              <div class="box-img">
+                <img class="" src="images/repay the loan/bank.webp" alt="">
+              </div>
+              <div class="block">
+                <h6 class="box-title">Банковским переводом</h6>
+                <p class="text">Оплата кредита в терминале Ibox, EasyPay и City24 - это быстро и удобно. Терминал Вы сможете найти в ближайшем к Вам супермаркете.</p>
+                <a class="repay-link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slide-numbering">
+              <span class="prev3" onclick="plusSlides3(-1)">&#10094;</span>
+              <span class="active-dot3">01</span>
+              <span class="total-dot3">03</span>
+              <span class="next3" onclick="plusSlides3(1)">&#10095;</aspan>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> 
+
+    <section class="loyalty-program" data-aos="zoom-in">
+      <div class="container">
+        <h2 class="title-item">Программа лояльности</h2>
+        <div class="row">
+          <div class="col">
+            <div class="loyalty-bg">
+              <h4 class="table-title">Скидка в <i>&nbsp;%&nbsp;</i> за вовремя погашенные кредиты подряд</h4>
+              <img class="desktop" src="images/tabble.webp" alt="">
+              <img class="mobile" src="images/tabble (mob).webp" alt="">
+              <a class="btn" href="">Подробнее о скидках</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us" data-aos="flip-left" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="title-item">Почему мы</h2>
+        <div class="why-us-flex">
+          <div class="why-us-box">
+            <div class="box-img">
+              <img class="why-img-1" src="images/Why us/1.webp" alt="">
+            </div>
+            <div class="box-item" >
+              <h6 class="text-title">Быстрое получение</h6>
+              <p class="text">
+                В нашей системе вы можете получить деньги на карту за 15 минут</p>
+            </div>
+          </div>
+          <div class="why-us-box">
+            <div class="box-img">
+              <img class="why-img-2" src="images/Why us/2.webp" alt="">
+            </div>
+            <div class="box-item" >
+              <h6 class="text-title">Контроль оплаты</h6>
+              <p class="text">
+                Отслеживайте график платежей через личный кабинет на сайте</p>
+            </div>
+          </div>
+          <div class="why-us-box">
+            <div class="box-img">
+              <img class="why-img-3" src="images/Why us/3.webp" alt="">
+            </div>
+            <div class="box-item" >
+              <h6 class="text-title">Минимум документов</h6>
+              <p class="text">
+                В отличии от банка, не требуем огромный пакет документов</p>
+            </div>
+          </div>
+          <div class="why-us-box">
+            <div class="box-img">
+              <img class="why-img-4" src="images/Why us/4.webp" alt="">
+            </div>
+            <div class="box-item" >
+              <h6 class="text-title">Простые условия</h6>
+              <p class="text">
+                Сотрудничать с нашей организацие легко, удобно и безопасно</p>
+            </div>
+          </div>
+          <div class="why-us-box">
+            <div class="box-img">
+              <img class="why-img-5" src="images/Why us/5.webp" alt="">
+            </div>
+            <div class="box-item" >
+              <h6 class="text-title">Минимальная переплата</h6>
+              <p class="text">
+                Это делает наш продукт оптимальным вариантом во многих ситуациях</p>
+            </div>
+          </div>
+          <div class="why-us-box">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="reviews">
+      <div class="container">
+        <h2 class="title-item">Отзывы</h2>
+        <div class="row">
+
+          <div class="assessment-average"><i>&#9733;</i>&nbsp;<span>5,0</span>(8 отзывов)</div>
+          
+          <div class="slider-container" >
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">
+                    <i> &#9733; </i> &nbsp; <span>5,0</span>
+                  </div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">1 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Ребята молодцы! Так держать! Срочно нужны были деньги, в двух других конторах отказали по непонятным причинам, здесь - выдали за 15 минут</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>4,9</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">2 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>5,0</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">1 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>4,0</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">1 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Ребята молодцы! Так держать! Срочно нужны были деньги, в двух других конторах отказали по непонятным причинам, здесь - выдали за 15 минут</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>4,3</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">2 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>3,0</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">1 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>4,5</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">1 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Ребята молодцы! Так держать! Срочно нужны были деньги, в двух других конторах отказали по непонятным причинам, здесь - выдали за 15 минут</p>
+              </div>
+            </div>
+            <div class="slides4">
+              <div class="box">
+                <div class="reviews-box-item">
+                  <div class="assessment">&#9733;&nbsp;<span>4,2</span></div>
+                  <div class="box-avtor">
+                    <img src="images/Rectangle 134.webp" alt="Avatar">
+                    <div class="box-avtor-item">
+                      <h6 class="box-title">Denis Yarmolenko</h6>
+                      <p class="feedback">2 мес. назад</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+          </div>
+          <div class="arrows">
+            <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
+            <div class="slide-numbering">
+              <span class="active-dot4">01</span>
+              <span class="total-dot4">01</span>
+            </div>
+            <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="faq" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <h2 class="title-item">Часто задаваемые вопросы</h2>
+          <div class="faq-accordion">
+
+            <button class="accordion">
+              <h6>Кто может получить кредит в PanCredit?</h6>
+              <span class="icon down"></span>
+            </button>
+            <div class="panel">
+              <p></p>
+            </div>
+            
+            <button class="accordion">
+              <h6>Какие документы нужны для оформления онлайн кредита?</h6>
+              <span class="icon down"></span>
+            </button>
+            <div class="panel">
+              <p>Нужен только паспорт и индивидуальный налоговый номер (ИНН), мы не требуем фотографий с паспортом или загрузку сканкопий документов.</p>
+            </div>
+            
+            <button class="accordion">
+              <h6>Сколько времени будет рассматриваться моя заявка?</h6>
+              <span class="icon down"></span>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, optio eveniet voluptatibus provident aut explicabo, porro voluptates quae accusamus sapiente quos totam obcaecati atque quisquam, deserunt natus accusantium eum consequatur fuga minus quaerat mollitia non. Culpa sint porro magnam provident nemo a sit repellendus facere illo atque eveniet adipisci hic molestiae inventore, at, explicabo placeat, blanditiis perspiciatis totam voluptate recusandae vel odit ea nulla. Esse quae accusamus illo. Numquam deserunt, aspernatur magnam explicabo animi dolor?</p>
+            </div>
+  
+            <button class="accordion">
+              <h6>Что делать, если не успеваю погасить кредит?</h6>
+              <span class="icon down"></span>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, optio eveniet voluptatibus provident aut explicabo, porro voluptates quae accusamus sapiente quos totam obcaecati atque quisquam, deserunt natus accusantium eum consequatur fuga minus quaerat mollitia non. Culpa sint porro magnam provident nemo a sit repellendus facere illo atque eveniet adipisci hic molestiae inventore, at, explicabo placeat, blanditiis perspiciatis totam voluptate recusandae vel odit ea nulla. Esse quae accusamus illo. Numquam deserunt, aspernatur magnam explicabo animi dolor?</p>
+            </div>
+  
+            <button class="accordion">
+              <h6>Начисляются ли штрафы и пени в период действия карантина?</h6>
+              <span class="icon down"></span>
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, optio eveniet voluptatibus provident aut explicabo, porro voluptates quae accusamus sapiente quos totam obcaecati atque quisquam, deserunt natus accusantium eum consequatur fuga minus quaerat mollitia non. Culpa sint porro magnam provident nemo a sit repellendus facere illo atque eveniet adipisci hic molestiae inventore, at, explicabo placeat, blanditiis perspiciatis totam voluptate recusandae vel odit ea nulla. Esse quae accusamus illo. Numquam deserunt, aspernatur magnam explicabo animi dolor?</p>
+            </div>
+  
+            <a href="#" class="accordion-btn">Другие вопросы</a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us-flex">
+          <div class="about-us-white-bg">
+            <h3>О нас</h3>
+            <h5>Не соглашайся с временным безденежьем</h5>
+            <p>Как часто вы сожалели о том, что на определённую вещь, подарок, развлечение, лекарства не хватает финансовых средств? Требовалось совсем немного, порядка 1000-5000 гривен, а занять было не у кого: друзья отказывали, нуждаясь сами, банк требовал пакет документов и предлагал длительный срок рассмотрения заявки. Смешная сумма – и тем не менее получить её было очень сложно… Знакомьтесь, компания KoshelOK. Мы предоставляем частные займы в сумме до 10 000 гривен, с учётом оперативного решения вопроса. </p>
+            <h5>Кредит-онлайн на карту Украина</h5>
+            <p>Работаем по всей Украине и не требуем присутствия клиентов в момент рассмотрения заявки. От вас понадобится 2 действия: заполнить заявку и приложить к электронному письму сканированные копии паспорта, идентификационного кода</p>
+            <h5>Украина</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum minima, sunt voluptates sit et nobis ullam cupiditate quas. Illo animi perferendis libero provident quidem exercitationem accusamus, consequuntur consequatur repellat. Quaerat enim neque illo? Harum similique voluptas et quae id pariatur illum quam eligendi cupiditate nesciunt veniam exercitationem repudiandae qui ipsa, ex nobis iste sapiente blanditiis magni deleniti in expedita. Numquam in harum nam distinctio voluptates debitis suscipit dolorem fugit animi quibusdam perspiciatis cumque culpa magnam sed excepturi asperiores aut magni quam velit, impedit ducimus quae placeat. Excepturi, corrupti est? Omnis blanditiis non ex impedit quasi aperiam consequatur at aliquid?</p>
+          </div>
+          <div class="box">
+            <img class="about-us-img" src="images/Rectangle (1).webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container">
+        <div class="brands-flex" data-aos="zoom-out">
+          <div class="brand">
+            <a href="#"><img src="images/brands/Group 18.webp" alt=""></a>
+          </div>
+          <div class="brand">
+            <a href="#"><img src="images/brands/Group-1.webp" alt=""></a>
+          </div>
+          <div class="brand">
+            <a href="#"><img src="images/brands/Group 19.webp" alt=""></a>
+          </div>
+          <div class="brand">
+            <a href="#"><img src="images/brands/Group.webp" alt=""></a>
+          </div>
+          <div class="brand">
+            <a href="#"><img src="images/brands/Rectangle.webp" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">PanCredit</div>
+          <a class="logo-fb" href="#"><img src="images/facebook.webp" alt=""></a>
+        </div>
+        <div class="footer-content">
+          <div class="lending-services">
+            <h6 class="footer-title">Услуги кредитования</h6>
+            <ul class="footer-item">
+              <li><a href="#">Микрокредиты</a></li>
+              <li><a href="#">Кредит без справки <br>о доходах и поручителей</a></li>
+              <li><a href="#">Кредиты без звонков</a></li>
+              <li><a href="#">Кредит наличкой</a></li>
+              <li><a href="#">Быстрй займ</a></li>
+              <li><a href="#">Срочный займ </a></li>
+              <li><a href="#" >Кредит с плохой <br>кредитной историей</a></li>
+              <li><a href="#">Кредит для студентов</a></li>
+              <li><a href="#">Кредит для пенсионеров</a></li>
+              <li><a href="#">Кредит онлайн</a></li>
+              <li><a href="#">Деньги до зарплаты</a></li>
+              <li><a href="#">Займ онлайн на карту</a></li>
+              <li><a href="#">Потребительский кредит</a></li>
+            </ul>
+          </div>
+          <div class="regions">
+            <h6 class="footer-title">Регионы</h6>
+            <ul class="footer-item columns">
+              <li><a href="#">Киев</a></li>
+              <li><a href="#">Харьков</a></li>
+              <li><a href="#">Днепр</a></li>
+              <li><a href="#">Львов</a></li>
+              <li><a href="#">Одесса</a></li>
+              <li><a href="#">Полтава</a></li>
+              <li><a href="#">Кропивницкий</a></li>
+              <li><a href="#">Черкассы</a></li>
+              <li><a href="#">Чернигов</a></li>
+              <li><a href="#">Винница</a></li>
+              <li><a href="#">Белая Церковь</a></li>
+              <li><a href="#">Житомир</a></li>
+              <li><a href="#">Запорожье</a></li>
+              <li><a href="#">Ивано-Франковск</a></li>
+              <li><a href="#">Конотоп</a></li>
+              <li><a href="#">Кривой Рог</a></li>
+              <li><a href="#">Николаев</a></li>
+              <li><a href="#">Павлоград</a></li>
+              <li><a href="#">Ровно</a></li>
+              <li><a href="#">Сумы</a></li>
+              <li><a href="#">Тернополь</a></li>
+              <li><a href="#">Ужгород</a></li>
+              <li><a href="#">Умань</a></li>
+              <li><a href="#">Херсон</a></li>
+              <li><a href="#">Хмельницкий</a></li>
+              <li><a href="#">Черновцы</a></li>
+              <li><a href="#">Мариуполь</a></li>
+              <li><a href="#">Луцк</a></li>
+              <li><a href="#">Мелитополь</a></li>
+              <li><a href="#">Кременчуг</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <div class="box">
+              <h6 class="footer-title">контакты</h6>
+              <p class="address">08135, Киевская обл., Киево-Святошинский р-н, с. Чайки, ул. Антонова, 8А</p>
+              <div class="column">
+                <a class="tell" href="#">+38 (044) 334 44 20</a>
+                <a class="mail" href="#">info@pancredit.net</a>
+              </div>
+            </div>
+            <div class="g-pay-box">
+              <a href="#"><img src="images/googlePay.webp" alt=""></a>
+              <p class="g-pay">Управляй займом в мобильном приложении</p>
+            </div>
+            <div class="footer-text"><i>Образец расчета годовой процентной ставки:</i> сумма кредита 1000 гривен, срок 90 дней, необходимо будет суммарно погасить 2458 гривны, таким образом максимальная годовая процентная ставка apr составляет 591%. Процентная ставка за пользование кредитом составляет 1,62% в день - мы выдаем кредиты без скрытых комиссий и дополнительных процентов.*</div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a class="copyright" href="#">© 2020 PanCredit</a>
+          <a class="policy" href="#">Политика конфиденциальности</a>
+          <a class="web-master" href="#">Web мастеру</a>
+          <div class="facebook">Становитесь нашим другом в
+            <a href="#"><img src="images/facebook.webp" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/vendor.js"></script>
+  <script defer src="js/app.js"></script>
+</body>
+</html>
