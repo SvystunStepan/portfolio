@@ -1,0 +1,208 @@
+.contact-me {
+  margin: 180px 0 100px;
+}
+.contact-title {
+  color: #ffffff;
+  font-family: Bitter, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contact-item {
+  color: #ffffff;
+  font-family: "Fixel - Display Light", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 31px;
+  text-align: left;
+  margin: 45px 0 20px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  a {
+    color: #ffffff;
+    font-family: "Fixel - Display Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 10px;
+  }
+}
+.contact-mail, .contact-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contact-ico-mail {
+  width: 15px;
+  height: 12px;
+}
+.contact-ico-phone {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+.contact-box {
+  max-width: 457px;
+  width: 100%;
+  min-height: 463px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  padding: 20px 33px;
+}
+.form {
+  position: relative;
+  margin: 24px auto 12px;
+  ::placeholder {
+    color: #ffffff;
+    font-family: "Fixel - Display Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+  }
+  input {
+    width: 392px;
+    height: 52px;
+    border-radius: 3px;
+    background-color: #0e0e0e;
+    border: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    color: #ffffff;
+    font-family: "Fixel - Display Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    padding-left: 52px;
+    outline: none;
+    width: 100%;
+  }
+}
+.input-ico {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+}
+.form-message textarea {
+  width: 392px;
+  min-height: 146px;
+  overflow: hidden;
+  box-sizing: border-box; 
+  border-radius: 3px;
+  background-color: #0e0e0e;
+  resize: none;
+  border: none;
+  outline: none;
+  padding-top: 21px;
+  width: 100%;
+}
+.btn-send {
+  color: #ffffff;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 23px;
+  text-align: center;
+  max-width: 392px;
+  width: 100%;
+  min-height: 55px;
+  border-radius: 28px;
+  border: none;
+  background-color: #000000;
+  background-image: linear-gradient(89deg, #e00080 0%, #ce00c5 100%);
+  cursor: pointer;
+  transition: scale 0.5s ease;
+  padding: 15px;
+  margin-top: 35px;
+  position: relative;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.btn-send-ellipse {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  width: 47px;
+  height: 47px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: left 0.5s ease; 
+  img {
+    margin: 16px auto;
+  }
+}
+
+.btn-send:hover .btn-send-ellipse {
+  left: calc(100% - 51px);
+}
+
+
+.footer-psevdo {
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 170px;
+    left: 83px;
+    width: 161px;
+    height: 236px;
+    background-image: url(../images/contact-me-vector-1.webp);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 536px;
+    background-image: url(../images/vector-bg-contact.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-me {
+    margin: 50px 0 50px;
+}
+  .contact-title {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .contact-item {
+    text-align: center;
+    margin: 45px 0 20px;
+  }
+  .contacts {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .footer-psevdo::before {display: none;}
+}

@@ -1,0 +1,131 @@
+.project-page {
+  position: relative;
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 95px;
+    top: 743px;
+    width: 161px;
+    height: 236px;
+    background-image: url(../images/contact-me-vector-1.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    right: -600px;
+    bottom: 229px;
+    width: 782px;
+    height: 733px;
+    background-image: url(../images/vector-5.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+.page-project-title {
+  background: linear-gradient(to bottom, #e00080 0%, #ce00c5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Bitter, sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 150px;
+}
+
+/* Tabs */
+ul#tabs-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 25px;
+  background-color: #1f1f1f;
+  margin: 63px auto 0;
+}
+
+#tabs-nav li a:hover,
+.tab-active a {
+  color: #cf00bd;
+  border-radius: 22px;
+  background-color: #ffffff;
+}
+#tabs-nav li a {
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  border-radius: 22px;
+  padding: 12px 20px;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+  display: block;
+}
+#tabs-nav li a:first-of-type {
+  margin-left: 6px;
+}
+#tabs-nav li a:last-of-type {
+  margin-right: 6px;
+}
+#tabs-content {
+  margin: 100px auto;
+}
+
+.page-project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 555px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  padding: 15px;
+  margin: 0 auto 25px;
+  text-align: center;
+  img {
+    max-width: 555px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-project-title {
+    margin-top: 100px;
+  }
+  ul#tabs-nav {
+    flex-wrap: wrap;
+    min-height: 100px;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 30px;
+  }
+  #tabs-nav li a:first-of-type {
+    margin-left: 0px;
+  }
+  #tabs-nav li a:last-of-type {
+    margin-right: 0px;
+  }
+  #tabs-content {
+    margin: 30px auto;
+  }
+  .tab-active a,
+  #tabs-nav li a {
+    padding: 8px 12px;
+  }
+  .tab-btn.active {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,200 @@
+@import 'fancybox';
+
+.view-project .container {
+  max-width: 1055px;
+}
+.view-project {
+  position: relative;
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -150px;
+    left: 0px;
+    width: 1920px;
+    height: 2036px;
+    background-image: url(../images/view-project-bg.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+.view-project .container {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 519px;
+    left: -1289px;
+    width: 1182px;
+    height: 2773px;
+    background-image: url(../images/view-project-vector-1.webp);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 1000px;
+    right: -1000px;
+    width: 782px;
+    height: 1198px;
+    background-image: url(../images/view-project-vector-2.webp);
+    background-repeat: no-repeat;
+  }
+}
+.view-project-lable {
+  color: #ffffff;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 23px;
+  text-align: center;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 25px;
+  background-color: #1f1f1f;
+  padding: 14px 36px;
+  margin-top: 81px;
+}
+.view-project-title {
+  color: #ffffff;
+  font-family: Bitter, sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 70px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 46px 0 61px;
+  span {
+    color: #ff2ad9;
+    font-family: Bitter, sans-serif;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+}
+.view-project-maket {
+  max-width: 1024px;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.view-project-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  border: 1px solid #cf00bd;
+  margin: 15px auto 50px;
+}
+.table-column {
+  max-width: 341px;
+  width: 100%;
+  padding: 15px;
+}
+.table-column:nth-of-type(2) {
+  border-left: 1px solid #cf00bd;
+  border-right: 1px solid #cf00bd;
+}
+
+.table-title {
+  color: #ffffff;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.table-item {
+  color: #ffffff;
+  font-family: "Fixel - Display Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 31px;
+  text-align: center;
+  a {
+    color: #ffffff;
+    word-wrap: break-word;
+    &:hover {
+      color: #cf00bd;
+    }
+  }
+}
+
+.view-project-content {
+  text-align: center;
+  min-height: 451px;
+  margin: 0 auto;
+  a {
+    display: block;
+    img, iframe {
+      width: 100%;
+      background-color: #1f1f1f;
+      margin: 15px 0;
+    }
+  }
+}
+.view-project-btn {
+  color: #ffffff;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 23px;
+  text-align: center;
+  display: block;
+  max-width: 1170px;
+  max-height: 55px;
+  border-radius: 28px;
+  background-color: #000000;
+  background-image: linear-gradient(89deg, #e00080 0%, #ce00c5 100%);
+  white-space: nowrap;
+  padding: 16px;
+  margin-bottom: 63px;
+}
+
+@media screen and (max-width: 768px) {
+  .view-project-title {
+    text-align: center;
+    margin: 26px 0 30px;
+  }
+}
+@media screen and (max-width: 570px) {
+ 
+  .view-project-table {
+    flex-direction: column;
+  }
+  .table-column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: none;
+  }
+  .table-column:nth-of-type(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #cf00bd;
+    border-bottom: 1px solid #cf00bd;
+  }
+
+  .table-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .table-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

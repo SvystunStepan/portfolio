@@ -1,0 +1,28 @@
+@import '../../mq';
+
+@media #{$phoneLandscape} {
+  @import '../mobile';
+  & {
+    .nav-main {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header {
+      margin-top: 250px;
+    }
+    .header-foto {
+      margin-top: -96px;
+      margin-left: -35px;
+      &::before {
+        top: -140px;
+      }
+    }
+    .foto {
+      width: 300px;
+    }
+    .header-index-box {
+      align-items: flex-start;
+      margin-left: 14%;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+& {
+  .language-switch {
+    width: 33px;
+    height: auto;
+  }
+
+  .nav-btn {
+    padding: 10px 13px;
+  }
+  .footer {
+    padding-top: 50px;
+  }
+  .footer-title {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .footer-item {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .header-title,
+  .page-project-title,
+  .about-me-title,
+  .view-project-title {
+    font-size: 48px;
+    text-align: center;
+  }
+  .header-index {
+    span {
+      font-size: 46px;
+      line-height: 1;
+    }
+  }
+  .main-title {
+    font-size: 36px;
+  }
+  .help .main-title {
+    margin-bottom: 50px;
+  }
+
+  .header-title-item {
+    line-height: 31px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .header-btn {
+    margin: 0 auto;
+  }
+  
+
+  @media screen and (max-width: 570px) {
+    .header-title,
+    .footer-title,
+    .page-project-title,
+    .about-me-title,
+    .view-project-title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .header-index {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 18px;
+      span {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    .main-title {
+      font-size: 28px;
+    }
+  }
+
+  // псевдокласи
+  .header {
+    margin-bottom: 50px;
+    &::after {
+     display: none;
+    }
+  }
+  .help {
+    padding-bottom: 50px;
+    &::before {
+     display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .project-section {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .how-i-work {
+    margin-top: 50px;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

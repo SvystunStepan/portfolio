@@ -1,0 +1,127 @@
+.about-me {
+  margin: 180px 0 100px;
+  .container {
+    position: relative;
+    z-index: 3;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -12px;
+      left: -248px;
+      width: 247px;
+      height: 208px;
+      background-image: url(../images/about-me-vector-1.webp);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 342px;
+      right: -48px;
+      width: 47px;
+      height: 47px;
+      background-image: url(../images/about-me-vector-2.webp);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.about-me-foto {
+  max-width: 535px;
+  height: auto;
+  margin-top: -55px;
+}
+.about-me-title {
+  color: #ffffff;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 63px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 68.1px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.about-me-item {
+  color: #fb28c5;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 35px 0 40px;
+}
+.about-me-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-me-text {
+  color: #ffffff;
+  font-family: "Fixel - Display Light";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 31px;
+  text-align: left;
+  padding: 0 15px;
+}
+.about-me-text-item {
+  color: #fb28c5;
+  font-family: "Fixel - Display Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 31px;
+  text-align: center;
+  max-width: 660px;
+  margin: 70px auto 0;
+}
+.footer-about-me {
+  position: relative;
+  z-index: 3;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 871px;
+    background-image: url(../images/vector-bg-about-me.webp);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-me-text {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-me {
+    margin: 50px 0 50px;
+  }
+  .about-me-foto {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-me-title {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .about-me-item {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  .about-me-foto {
+    max-height: 50vh;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$phonePortrait} {
+    @import '../mobile';
+  & {
+    .header-foto img {
+      width: 250px;
+    }
+  }
+}
